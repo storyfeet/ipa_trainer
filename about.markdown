@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This website has been created by Matthew Stoodley, built upon the work done by [ipachart.com](https://ipachart.com). 
+This website has been created by Matthew Stoodley, built upon the work done by [ipachart.com](https://www.ipachart.com). 
 
 It's purpose is to give me a place to practice hearing the difference between the various sounds, but since I'd made it, I thought I'd like to share it.
 
