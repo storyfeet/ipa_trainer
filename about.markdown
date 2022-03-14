@@ -4,15 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This website has been created by Matthew Stoodley, built upon the work done by [ipachart.com](https://ipachart.com) To give me a place to practice hearing the difference between the various sounds, but since I'd made it, I thought I'd like to share it.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+You can contact me at [matt.storyfeet@gmail.com](mailto:matt.storyfeet@gmail.com) or make a pull request for this site at [github](https://github.com/storyfeet/ipa_trainer)
