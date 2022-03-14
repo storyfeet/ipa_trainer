@@ -1,0 +1,28 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.holder , .quiz {
+    font-size:200%;
+}
+.quiz {
+    min-height: 100px;
+    border:1px solid black;
+}
+
+.quiz button {
+    font-size:300%;
+}
+
+.hidden{
+    Display:none;
+}
+
+.correct{
+    background:green;
+}
+.incorrect{
+    background:red;
+}
