@@ -59,7 +59,10 @@ function incorrect(ans,guess){
 function check_all(b){
     let checks = document.getElementsByClassName("check_sound");
     for (i in checks) {
-        checks[i].checked =b; 
+        if (checks[i].nodeName == "INPUT"){
+            console.log("Checking:",checks[i]);
+            checks[i].checked = b; 
+        }
     }
 }
 
