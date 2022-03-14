@@ -13,6 +13,8 @@ layout: page
 <div class="quiz">
 </div>
 
+<button onclick="check_all(true)">Select All</button>
+<button onclick="check_all(false)">Deselect All</button>
 <div class="holder">
 {%for s in site.data.soundlist%}
     <input class="check_sound" type="checkbox" data-sound="{{s.sound}}" data-char="{{s.char}}" onclick='play_sound("{{s.sound}}")'>{{s.char}}</input>

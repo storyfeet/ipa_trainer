@@ -56,6 +56,14 @@ function incorrect(ans,guess){
     qbox.appendChild(cbutton);
 }
 
+function check_all(b){
+    let checks = document.getElementsByClassName("check_sound");
+    for (i in checks) {
+        checks[i].checked =b; 
+    }
+}
+
+
 function run_quiz(){
     console.log("Quiz RUnning");
     let qbox = document.getElementsByClassName("quiz")[0];
