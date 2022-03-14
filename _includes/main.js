@@ -1,12 +1,10 @@
----
----
 
 let music_list = {};
 function play_sound(name){
     if (music_list[name]) {
         music_list[name].play;
     }
-    const music = new Audio(`{{site.baseurl}}/assets/sounds/${name}.mp3`);
+    const music = new Audio(`${baseurl}/assets/sounds/${name}.mp3`);
     music_list[name] = music;
     music.play();
 }
