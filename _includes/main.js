@@ -1,4 +1,6 @@
 
+let streak = 0;
+let max_streak = 0;
 let music_list = {};
 function play_sound(name){
     if (music_list[name]) {
@@ -9,7 +11,19 @@ function play_sound(name){
     music.play();
 }
 
+function set_streak(n){
+    if (n === undefined ) n = streak +1;
+    streak = n;
+    max_streak = Math.max(streak,max_streak);
+    document.getElementsByClassName("streak")[0].innerHTML=`Streak = ${streak}`;
+    document.getElementsByClassName("max-streak")[0].innerHTML=`Max = ${max_streak}`;
+
+}
+
+
 function correct(ans){
+
+    set_streak();
     let qbox = document.getElementsByClassName("quiz")[0];
     qbox.innerHTML = "" ;
     play_sound(ans.sound);
@@ -24,6 +38,7 @@ function correct(ans){
     
 }
 function incorrect(ans,guess){
+    set_streak(0);
     let qbox = document.getElementsByClassName("quiz")[0];
     qbox.innerHTML="";
     play_sound(ans.sound);
