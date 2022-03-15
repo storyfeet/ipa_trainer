@@ -102,3 +102,22 @@ function run_quiz(){
     }
 }
 
+function read_params(){
+    let params = new URLSearchParams(window.location.href);
+    let ar = params.getAll("c");
+    let checks = document.getElementsByClassName("check_sound");
+    
+    for (i in ar){
+        p = ar[i];
+        for (ci in checks){
+            let ch = checks[ci];
+            if (ch.getAttribute?.("data-char") === p){
+                ch.checked = true;
+            }
+        }
+    }
+
+}
+read_params();
+
+
