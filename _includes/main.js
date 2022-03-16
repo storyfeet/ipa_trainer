@@ -22,26 +22,30 @@ function set_streak(n){
 
 
 function correct(ans){
-
     set_streak();
     let qbox = document.getElementsByClassName("quiz")[0];
     qbox.innerHTML = "" ;
-    play_sound(ans.sound);
+    show_correct(ans,qbox);
+}
    
 
+function show_correct(ans,qbox){
+    play_sound(ans.sound);
     let cbutton = document.createElement("Button");
     cbutton.classList.add("correct");
     cbutton.textContent=ans.c;
     cbutton.onclick =()=>play_sound(ans.sound);
     qbox.appendChild(cbutton);
 
+    let ctext = document.createElement("text");
+    ctext.innerHTML=ans.sound;
+    qbox.appendChild(ctext);
     
 }
 function incorrect(ans,guess){
     set_streak(0);
     let qbox = document.getElementsByClassName("quiz")[0];
     qbox.innerHTML="";
-    play_sound(ans.sound);
 
     let ibutton = document.createElement("Button");
     ibutton.classList.add("incorrect");
@@ -49,11 +53,7 @@ function incorrect(ans,guess){
     ibutton.onclick=()=>play_sound(guess.sound)
     qbox.appendChild(ibutton);
 
-    let cbutton = document.createElement("Button");
-    cbutton.classList.add("correct");
-    cbutton.textContent=ans.c;
-    cbutton.onclick =()=>play_sound(ans.sound);
-    qbox.appendChild(cbutton);
+    show_correct(ans,qbox);
 }
 
 function check_all(b){
