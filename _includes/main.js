@@ -60,8 +60,19 @@ function check_all(b){
     let checks = document.getElementsByClassName("check_sound");
     for (i in checks) {
         if (checks[i].nodeName == "INPUT"){
-            console.log("Checking:",checks[i]);
             checks[i].checked = b; 
+        }
+    }
+}
+
+function select_inventory(s,b){
+    let checks = document.getElementsByClassName("check_sound");
+    let s2 = s.split(" ");
+    console.log(s2);
+    for (i in checks){
+        let ch = checks[i];
+        if( s2.includes(ch.getAttribute?.("data-char") )){
+            ch.checked = b;
         }
     }
 }
@@ -83,6 +94,13 @@ function run_quiz(){
             });
         }
     }
+    //reduce quiz to 10 options
+    while (options.length > 10){
+        let r = Math.floor(Math.random() * options.length);
+        options.splice(r,1);
+    }
+    
+
     let r = Math.floor(Math.random() * options.length);
     play_sound(options[r].sound);
     let btn_rep_sound = document.getElementsByClassName("repeater")[0] ;

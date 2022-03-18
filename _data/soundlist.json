@@ -110,7 +110,7 @@
     {"sound":"Voiced_alveolo-palatal_fricative","char":"ʑ"},
     {"sound":"Alveolar_lateral_flap","char":"ɺ"},
     {"sound":"Voiceless_dorso-palatal_velar_fricative","char":"ɧ"},
-    {"sound":"Voiceless_alveolar_affricate","char":"t͡"},
+    {"sound":"Voiceless_alveolar_affricate","char":"t͡s"},
     {"sound":"Voiceless_palato-alveolar_affricate","char":"t͡ʃ"},
     {"sound":"Voiceless_alveolo-palatal_affricate","char":"t͡ɕ"},
     {"sound":"Voiceless_retroflex_affricate","char":"ʈ͡ʂ"},

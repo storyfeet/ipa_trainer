@@ -21,6 +21,16 @@ layout: page
 {%endfor%}
 </div>
 
+<h2>Select By Language</h2>
+{%for l in site.data.inventories %}
+<h3>{{l.name}}</h3>
+<button onclick="select_inventory('{{l.consonants}}',true)">Select Consonants</button>
+<button onclick="select_inventory('{{l.consonants}}',false)">Deselect Consonants</button>
+<button onclick="select_inventory('{{l.vowels}}',true)">Select Vowels</button>
+<button onclick="select_inventory('{{l.vowels}}',false)">Deselect Vowels</button>
+{%endfor%}
+
+
 <div class="copyright">
 <div class="text">
 	<p class="copyright">Each audio clip is the work of Peter Isotalo, User:Denelson83, UCLA Phonetics Lab Archive 2003, User:Halibutt, User:Pmx or User:Octane, and made available under a free and/or copyleft licence. For details on the licensing and attribution requirements of a particular clip, browse to it from the <a href="https://commons.wikimedia.org/wiki/General_phonetics">general phonetics</a> page at the Wikimedia Commons. Vowel trapezoid background by User:Denelson83; see <a href="https://commons.wikimedia.org/wiki/File:Blank_vowel_trapezoid.png">File:Blank vowel trapezoid.png</a> on Wikimedia Commons for details.</p>
