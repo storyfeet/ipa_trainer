@@ -3,10 +3,10 @@
         "name":"English_rp",
         "consonants":"p b t d k g f v T D s z S Z h t͡s ɖ͡ʐ ɹ m l n r N j w",
         "vowels":"i ɪ e æ u ʊ ʌ ɔ ɒ a ə e ɔ ɜ"
-    }
+    },
     {
         "name":"Cantonese",
         "consonants":"m n ŋ p t	t͡s k ʔ p t f s h l j w",
-        "vowels":""
+        "vowels":"i y u e ɛ ɵ œ o ɔ ɐ a"
     }
 ]
